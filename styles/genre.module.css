@@ -1,0 +1,35 @@
+.genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 380px;
+  padding: 10px;
+  margin: 0px;
+  cursor: pointer;
+  place-items: left;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+}
+.sel_genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 380px;
+  padding: 10px;
+  margin: 0px;
+  cursor: pointer;
+  place-items: left;
+  background-color: blanchedalmond;
+  border: 1px solid yellow;
+  color: blue;
+  font-size: 15px;
+}
+.genre a {
+  text-align: left;
+}
+
+.genre:hover {
+  transform: scale(1.05);
+  background-color: blue;
+}

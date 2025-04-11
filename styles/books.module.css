@@ -1,0 +1,23 @@
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.book {
+  border: 2px solid white;
+  justify-items: center;
+  align-items: top;
+  width: 220px;
+  height: 350px;
+  display: grid;
+  font-size: 15px;
+}
+
+.book img {
+  width: 200px;
+  height: 300px;
+}
