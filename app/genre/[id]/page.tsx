@@ -1,5 +1,5 @@
-import { Generes } from "../../(home)/page";
 import Books from "../../../components/book_list";
+import Generes from "../../../components/genre_list";
 import styles from "../../../styles/home.module.css";
 
 export const API_URL = "https://books-api.nomadcoders.workers.dev/lists";
