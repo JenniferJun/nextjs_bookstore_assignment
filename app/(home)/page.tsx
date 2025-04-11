@@ -14,7 +14,15 @@ async function getGenres() {
   return sortedData;
 }
 
-export default async function Generes({ id }: { id?: string }) {
+export default async function HomePage() {
+  return (
+    <>
+      <Generes />
+    </>
+  );
+}
+
+export async function Generes({ id }: { id?: string }) {
   const genres = await getGenres();
   if (id === undefined) id = genres[0].list_name_encoded;
   return (
