@@ -1,8 +1,6 @@
 import Generes from "../../../components/genre_list";
 import styles from "../../../styles/home.module.css";
 
-export const API_URL = "https://books-api.nomadcoders.workers.dev/lists";
-
 interface IParams {
   params: { id: string };
 }
