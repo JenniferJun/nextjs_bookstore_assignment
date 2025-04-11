@@ -1,4 +1,3 @@
-import Books from "../../../components/book_list";
 import Generes from "../../../components/genre_list";
 import styles from "../../../styles/home.module.css";
 
