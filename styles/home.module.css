@@ -6,9 +6,17 @@
 }
 
 .container h1 {
+  padding: 0px;
   color: antiquewhite;
   font-weight: bold;
   font-size: 35px;
+}
+
+.container h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0px 0px 20px 0px;
 }
 
 .store {

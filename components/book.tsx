@@ -16,9 +16,9 @@ export interface IBookProps {
   amazon_product_url: string,
 }
 
-export default function Book({ title, amazon_product_url, book_image, author, description }: IBookProps) {
+export default function Book({ title, amazon_product_url, book_image, author, description, primary_isbn13 }: IBookProps) {
   return (
-    <div className={styles.book}>
+    <div id={primary_isbn13} className={styles.book}>
       <img src={book_image} alt={title} />
       <span className={styles.bookh1}>{title} </span>
       <h2>Author: {author}</h2>

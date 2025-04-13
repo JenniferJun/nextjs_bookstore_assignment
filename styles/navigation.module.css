@@ -1,5 +1,5 @@
 .nav {
-  background-color: #2d2d2d;
+  background-color: black;
   position: fixed;
   width: 100vw;
   margin: 0 auto;
@@ -11,7 +11,7 @@
 .nav ul {
   display: flex;
   justify-content: flex-start;
-  gap: 50px;
+  gap: 20px;
 }
 
 .menu {
@@ -19,7 +19,7 @@
 }
 
 .sel_menu {
-  background-color: azure;
+  background-color: white;
   color: black;
   font-weight: bold;
 }
@@ -28,8 +28,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  width: 250px;
+  border-radius: 20px;
+  width: 150px;
   height: 45px;
   font-size: 20px;
   list-style: none;

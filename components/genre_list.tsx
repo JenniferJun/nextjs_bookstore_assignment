@@ -10,28 +10,31 @@ async function getGenres() {
   return sortedData;
 }
 
-export default async function Generes({ id }: { id?: string }) {
+export default async function Generes({ id, name }: { id?: string, name?: string }) {
   const genres = await getGenres();
   if (id === undefined) id = genres[0].list_name_encoded;
+  if (name === undefined) name = genres.find(item => item.list_name_encoded === id).display_name;
   return (
     <>
-
+      <h1>The New York Times Best Seller</h1><h3>{name}</h3>
       <div className={styles.store}>
-        <div className={styles.list}>
-          {genres.map((genre: IGenreProps) => (
-            <Genre
-              key={genre.list_name_encoded}
-              list_name={genre.list_name}
-              display_name={genre.display_name}
-              list_name_encoded={genre.list_name_encoded}
-              oldest_published_date={genre.oldest_published_date}
-              newest_published_date={genre.newest_published_date}
-              updated={genre.updated}
-              selected_id={id}
-            />
+        <nav className={styles.list}>
+          <ul>
+            {genres.map((genre: IGenreProps) => (
+              <Genre
+                key={genre.list_name_encoded}
+                list_name={genre.list_name}
+                display_name={genre.display_name}
+                list_name_encoded={genre.list_name_encoded}
+                oldest_published_date={genre.oldest_published_date}
+                newest_published_date={genre.newest_published_date}
+                updated={genre.updated}
+                selected_id={id}
+              />
 
-          ))}
-        </div>
+            ))}
+          </ul>
+        </nav>
         <div className={styles.content}>
           <Books id={id} />
         </div>

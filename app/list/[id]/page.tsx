@@ -8,7 +8,6 @@ interface IParams {
 export default async function GenrePage({ params: { id } }: IParams) {
   return (
     <div className={styles.container}>
-      <h1>The New York Times Best Seller</h1>
       <Generes id={id} />
     </div>
   );
