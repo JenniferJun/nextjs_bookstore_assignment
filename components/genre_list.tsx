@@ -15,7 +15,7 @@ export default async function Generes({ id }: { id?: string }) {
   if (id === undefined) id = genres[0].list_name_encoded;
   return (
     <>
-      <h1>The New York Times Best Seller</h1>
+
       <div className={styles.store}>
         <div className={styles.list}>
           {genres.map((genre: IGenreProps) => (

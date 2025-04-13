@@ -2,34 +2,51 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-radius: 10px;
   width: 380px;
   padding: 10px;
   margin: 0px;
   cursor: pointer;
   place-items: left;
-  border: 1px solid white;
+  border: 0px solid blanchedalmondgray;
+  box-shadow: 3px 1px 1px blanchedalmond;
   color: white;
   font-size: 15px;
 }
+
+.genre svg {
+  fill: white;
+  width: 13px;
+}
+
 .sel_genre {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 380px;
+  justify-content: right;
+  border-radius: 7px;
+  width: 390px;
   padding: 10px;
   margin: 0px;
   cursor: pointer;
   place-items: left;
   background-color: blanchedalmond;
-  border: 1px solid yellow;
-  color: blue;
-  font-size: 15px;
+  border: 1px solid black;
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
 }
+
+.sel_genre svg {
+  fill: blanchedalmond;
+  width: 18px;
+}
+
 .genre a {
   text-align: left;
 }
 
 .genre:hover {
   transform: scale(1.05);
-  background-color: blue;
+  background-color: azure;
+  color: black;
 }

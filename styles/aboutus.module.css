@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  padding: 60px;
+  gap: 30px;
+}
+
+.container h1 {
+  color: antiquewhite;
+  font-weight: bold;
+}
